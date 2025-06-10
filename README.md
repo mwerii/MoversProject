@@ -1,5 +1,3 @@
-# MoversProject
-My first project
 # Transport Request System
 
 A web-based transportation request platform for farmers to streamline produce logistics.
