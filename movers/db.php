@@ -23,5 +23,3 @@ if (!$conn) {
     die("Connection to PostgreSQL failed.");
 }
 ?>
-
-
