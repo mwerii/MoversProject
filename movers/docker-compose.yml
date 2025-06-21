@@ -1,0 +1,18 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: movers_php
+    ports:
+      - "80:80"                # change to 8080:80 if port 80 is busy
+    environment:              # values come from .env or your shell
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT:-5432}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DRIVER: pgsql        # optional but handy if your code checks it
+    volumes:
+      - .:/var/www/html        # hot‑reload code without rebuilding
