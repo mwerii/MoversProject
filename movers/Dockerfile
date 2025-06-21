@@ -9,6 +9,6 @@ RUN docker-php-ext-install mysqli pdo_mysql
 RUN apt-get update && apt-get install -y libpq-dev \
     && docker-php-ext-install pgsql pdo_pgsql
 
-COPY . /var/www/html/
+COPY ./movers/ /var/www/html/
 WORKDIR /var/www/html
 EXPOSE 80
