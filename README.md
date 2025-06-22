@@ -14,7 +14,7 @@ A web-based transportation request platform for farmers to streamline produce lo
 - Database: MySQL
 
 ## 📸 Screenshots
-Add screenshots in `/assets` and embed here using `![alt text](assets/screenshot1.png)`
+Screenshots are in  `/assets` and embed here using `![alt text](assets/screenshot1.png)`
 
 ## 🔧 Setup Instructions
 1. Clone the repo
